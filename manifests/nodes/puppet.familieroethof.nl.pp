@@ -1,0 +1,3 @@
+node "puppet.familieroethof.nl" {
+
+}

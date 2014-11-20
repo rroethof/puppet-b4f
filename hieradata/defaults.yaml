@@ -1,0 +1,33 @@
+---
+# DNS
+resolver:
+  searchpath:
+    - %{domain}
+  nameservers:
+    - 8.8.8.8
+
+# Puppet
+puppet:
+  master: iut-puppetmaster01.familieroethof.nl
+  ca: iut-puppetmaster01.familieroethof.nl
+
+# LDAP
+ldap:
+  master: iut-puppetmaster01.familieroethof.nl
+  slave: iut-puppetslave01.familieroethof.nl
+  backup_slave: iut-puppetslave02.familieroethof.nl
+
+# Sudo
+sudo_entries:
+  - "%unix ALL=NOPASSWD: ALL"
+
+# Postfix
+postfix:
+  mynetwork: 127.0.0.1
+  myhostname: %{fqdn}
+
+# Nagios
+nagios:
+  hosts:
+    - iut-puppetmaster01.familieroethof.nl
+
