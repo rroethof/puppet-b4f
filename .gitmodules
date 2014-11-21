@@ -1,0 +1,6 @@
+[submodule "modules/resolver"]
+	path = modules/resolver
+	url = git@github.com:rroethof/puppetmodules-resolver.git
+[submodule "modules/sudoers"]
+	path = modules/sudoers
+	url = git@github.com:rroethof/puppetmodules-sudoers.git
